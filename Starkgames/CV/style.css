@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.print-area{
+    width: 90%;
+    margin: 30px auto;
+}
+.print-area .header{
+    width: 100%;
+    height: 160px;
+    background-color: rgb(31, 34, 43);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 65px;
+    border: 5px solid white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0,.5);
+    cursor: pointer;
+    transition: .5s;
+    user-select: none;
+    filter: grayscale(100%);
+}
+.header img:hover{
+    filter: grayscale(0%);
+    transform: scale(1.05);
+    box-shadow: 3px 3px 20px rgba(0, 0, 0,.5);
+}
+.header-text{
+    color: white;
+    width: 60%;
+    margin-left: auto;
+}
+.header-text h1{
+    font-size: 50px;
+    font-weight: normal;
+    font-family: 'Pinyon Script', cursive;
+}
+.header-text p{
+    font-size: 20px;
+    color: lightgrey;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.left-area{
+    width: 26%;
+    background-color: rgb(236, 236, 236);
+    text-align: center;
+    padding-bottom: 20px;
+}
+.left-area .contact{
+    margin-top: 130px;
+    padding: 0 30px;
+}
+.contact h4{
+    font-size: 30px;
+    font-weight: normal;
+    margin: 20px 0;
+    font-weight: bold;
+}
+.contact h5{
+    font-size: 20px;
+    margin: 0;
+    margin-top: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+.contact p{
+    font-size: 20px;
+    text-align: left;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif
+}
+.skills{
+    margin-top: 30px;
+}
+.skills h1{
+    font-size: 30px;
+    font-weight: normal;
+}
+.bars{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px 10px;
+    padding: 0 20px;
+}
+.bars .bar p{
+    font-size: 15px;
+    font-weight: bold;
+}
+.bar span{
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(192, 192, 192);
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+.bar span::before{
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+.follow h1{
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: normal;
+}
+.follow h4{
+    font-size: 18;
+    margin: 5px 0;
+}
+.follow p{
+    font-size: 15px;
+    color: gray;
+}
+
+
+.right-area{
+    width: 70%;
+    padding: 50px;
+}
+.right-area h1{
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+}
+.right-area h1 span{
+    margin-right: 30px;
+    font-size: 50px;
+    color: lightgrey;
+}
+.right-area p{
+    text-align: justify;
+    font-size: 17px;
+    color: #111010 ;
+    margin-top: 10px;
+    padding-left: 70px;
+}
+.work-group{
+    margin: 10px 0;
+}
+.work .work-group{
+    position: relative;
+}
+.work-group h3{
+    font-size: 22px;
+    font-weight: normal;
+    padding-left: 70px;
+}
+.work-group h4{
+    font-size: 18px;
+    padding-left: 70px;
+    font-weight: normal;
+    color: gray;
+}
+.work-group span{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+.education{
+    margin-top: 30px;
+}
+.edu-group{
+    position: relative;
+    margin: 10px 0;
+}
+.edu-group h4{
+    padding-left: 70px;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.edu-group span{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+.edu-group p{
+    font-size: 18px;
+    padding-left: 70px;
+    font-weight: normal;
+    color: gray;
+    margin-top: 0;
+}
+button{
+    font-size: 15PX;
+    padding: 10px 20px;
+    margin: 50px 0 50px 0px;
+    background-color: rgb(127, 171, 189);
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0,.5);
+    cursor: pointer;
+    transition: .5s;
+}
+button:hover{
+    background-color: rgb(240, 13, 13);
+    box-shadow: 0 0 30px rgba(0, 0, 0,.5);
+}
